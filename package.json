@@ -1,0 +1,27 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/esbuild main.tsx --bundle --format=esm --global-name=pluginModule --external:@apyhub/fusion --outfile=main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@tiptap/core": "^2.8.0",
+    "@tiptap/react": "^2.8.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "apyf": "^1.0.6"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2",
+    "typescript": "^5.7.3"
+  }
+}

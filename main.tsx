@@ -1,16 +1,17 @@
+import React from "react";
 import { PluginContext } from "apyf";
-import { CatalogBrowser } from "./CatalogBrowser";
+// import { CatalogBrowser } from "./src/CatalogBrowser";
 
 const fusionApiPlugin = (context: PluginContext) => {
   return {
     onload: () => {
+      console.log("SHOULD BE RIGHT");
+
       const catalogBrowserTab = {
-        id: "apyhub-catalog",
-        type: "extension",
-        meta: {
-          icon: "book-image",
-          content: <CatalogBrowser />,
-        },
+        id: "catalog-browser",
+        icon: "smile",
+        title: "Catalog Browser",
+        content: <div>hello 123</div>,
       };
 
       context.registerSidebarTab("left", catalogBrowserTab);

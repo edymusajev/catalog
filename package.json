@@ -4,24 +4,17 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/esbuild src/main.tsx --bundle --format=esm --global-name=pluginModule --external:apyf --minify --outfile=main.js"
+    "build": "./node_modules/.bin/esbuild main.tsx --bundle --format=esm --global-name=pluginModule --external:apyf --outfile=main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "@tiptap/core": "^2.8.0",
-    "@tiptap/react": "^2.8.0",
-    "@types/react": "^18.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "dependencies": {
-    "apyf": "^1.0.6"
+    "apyf": "^1.0.8"
   },
   "devDependencies": {
-    "esbuild": "0.24.2",
+    "esbuild": "^0.24.2",
     "typescript": "^5.7.3"
   }
 }

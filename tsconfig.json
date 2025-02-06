@@ -6,13 +6,8 @@
     "isolatedModules": true,
     "allowJs": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "main.tsx"]
 }
